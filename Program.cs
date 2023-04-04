@@ -38,7 +38,7 @@ int B = Forth();
 
 int Forth()
 {
-    int B = N / 100;
+    int B = N / 10;
     return B;
 }
 
@@ -47,7 +47,7 @@ if (M == H)
     int sec = K % 10;
     int forth = B % 10;
 
-    if (K == B)
+    if (sec == forth)
     {
         Console.WriteLine("Число полиндром");
     }
