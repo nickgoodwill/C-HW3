@@ -19,8 +19,8 @@ int Last()
 }
 
 int H = First();
-
 int First()
+
 {
     int H = N / 10000;
     return H;
@@ -61,8 +61,8 @@ else
     Console.WriteLine("Число не полиндром");
 }
 
-// Напишите программу, которая принимает на вход координаты двух точек 
-// и находит расстояние между ними в 3D пространстве.
+ //Напишите программу, которая принимает на вход координаты двух точек 
+ //и находит расстояние между ними в 3D пространстве.
 
 int Read(string coordinate)
 {
@@ -85,3 +85,23 @@ Console.WriteLine(vect);
 
 // Напишите программу, которая принимает на вход число (N) 
 // и выдаёт таблицу кубов чисел от 1 до N.
+
+int S = GetInt();
+
+int GetInt()
+{
+    Console.WriteLine("Введите целое число: ");
+    int S = int.Parse(Console.ReadLine());
+    return S;
+}
+
+string CubedNumber(int S)
+{
+    string result = "";
+    for (int m = 1; m <= S; m++)
+    {
+        result += Math.Pow(m, 3)+" ";
+    }
+    return result;
+}
+System.Console.WriteLine(CubedNumber(S));
